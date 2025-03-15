@@ -6,7 +6,7 @@ function MainContent() {
   return (
     <div className="maindiv">
     <div className="background">
-      <img className="image-container" src="/images/statue.png" alt="Statue" />
+      <img className="image-container" src="/Images/statue.png" alt="Statue" />
     </div>
    
     </div>
