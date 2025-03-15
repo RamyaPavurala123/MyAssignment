@@ -6,14 +6,16 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className='maincontainer'>
-      <div className='menu-icon' onClick={() => setIsOpen(true)}>
+    <div className="sidebar-container">
+      <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
         <MenuIcon sx={{ fontSize: 40 }} />
       </div>
+
       {isOpen && (
-        <div className='sidebar'>
-          <div className='close-icon' onClick={() => setIsOpen(false)}>
+        <div className="sidebar">
+          <div className="close-icon" onClick={() => setIsOpen(false)}>
             <CloseIcon sx={{ fontSize: 30 }} />
           </div>
           <ul>

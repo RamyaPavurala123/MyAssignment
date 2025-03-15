@@ -1,102 +1,39 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
- .maincontainer{
-    background-color: hsl(186, 13%, 45%);
-    width: 100%;
-    
- }
-
-.menu-icon{
-    position: absolute;
-    color: black;
-    cursor:pointer;
-    margin-left: 30px;
-    margin-top: 10px;
+.sidebar-container {
+  position: relative;
 }
 
 .menu-icon {
-    color: #121212;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
 }
 
 .sidebar {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    background-color:hwb(203 40% 52%);
-    color: white;
-    padding: 20px;
-   
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #3cb2f1;
+  color: white;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidebar ul {
-    list-style: none;
-    padding: 0;
-    font-size: 30px;
+  list-style: none;
+  padding: 0;
 }
+
 .sidebar li {
-    margin: 10px 0;
-    cursor: pointer;
-}
-.sidebar ul li{
-    margin-right: 70px;
-    margin-top: 50px;
-}
-.sidebar ul li{
-    position:relative;
-    border-radius: 10px;
-    transform: 1s;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 20px 0;
+  cursor: pointer;
 }
 
 .close-icon {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    color: white;
-    
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
 }
-.close-icon:hover{
-    background-color: #3cb2f1;
-    border-radius: 10px;
-    transform: 1s;
-}
-
-.sidebar {
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1050;
-  }
-  
-  .menu-icon {
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 200px;
-    }
-  }
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 200px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .sidebar {
-      width: 180px;
-    }
-  
-    .menu-icon svg,
-    .close-icon svg {
-      font-size: 30px ;
-    }
-  }
-  
