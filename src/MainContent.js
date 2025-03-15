@@ -5,7 +5,7 @@ function MainContent() {
   return (
     <div className="maindiv">
     <div className="background">
-    <img src="/images/statue.png?v=2" alt="statue" />
+    <img src={`${process.env.PUBLIC_URL}/images/statue.png`} alt="Statue" />
     </div>
     </div>
   );
