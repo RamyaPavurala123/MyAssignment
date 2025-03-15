@@ -10,7 +10,7 @@ function MainContent() {
     <div className="background">
       <img className="image-container" src={statue} alt="Statue" />
     </div>
-   
+
     </div>
   );
 }
