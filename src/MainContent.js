@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './MainContent.css';
-import statue from '../images/statue.png';
+import statue from '/images/statue.png';
 
 
 function MainContent() {
